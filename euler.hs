@@ -14,6 +14,7 @@ fall = pow . add . oneOver
 main = do
 
       let y = (pow (add (oneOver 2)))
+      print y
 
 
 
