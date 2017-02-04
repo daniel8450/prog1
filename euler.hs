@@ -1,17 +1,10 @@
 euler :: Float
 euler x = (1+(1/x))^x
 
-
-x :: Int
-x = 0
-
-loop :: Float -> Float
-loop x = do
+eulerN 0 = return ()
+eulerN n =
+      do
       euler x
-      if x < 100
-      then loop (x + 1)
- 
+      eulerN (n-1)
       
-main = do
-      let y = (euler 2)
-      print y
+main = eulerN 10
