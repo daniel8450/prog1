@@ -1,20 +1,15 @@
-
-oneOver :: Float -> Float
-oneOver x = 1/x
-
-add :: Float -> Float
-add x = x+x
-
-pow :: Float -> Float
-pow x = x^x
-
-fall :: Float -> Float
-fall = pow . add . oneOver
-
-main = do
-
-      let y = (pow (add (oneOver 2)))
-      print y
+euler :: Float
+euler x = (1+(1/x))^x
 
 
+x :: Int
+x = 0
+
+loop :: Float -> Float
+loop x = do
+      euler x
+      if x < 100
+      then loop (x + 1)
+      print x
+      
 
