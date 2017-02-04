@@ -1,7 +1,7 @@
 euler :: Float -> Float
 euler x = (1+(1/x))^x
 
-eulerN 0 = return ()
+eulerN :: Float -> Float
 eulerN n =
       do
       euler n
