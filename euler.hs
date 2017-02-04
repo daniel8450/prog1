@@ -1,8 +1,22 @@
-n :: Int
-n = n+1
+timestwo :: Int -> Int
+timestwo x = x*2
 
-euler :: Float
-euler n = (1+1/n)^n
+plusone :: Int -> Int
+plusone x = x+1
+
+squared :: Int -> Int
+squared x = x*x
+
+fun :: Int -> Int
+fun = squared . timestwo . plusone 
 
 main = do
-  print(euler 20)
+
+       let y = (squared (timestwo (plusone 3)))
+       print y
+
+       let y = squared $ timestwo $ plusone 3
+       print y -- Function application
+
+       let y = (fun 3)
+       print y -- Function composition
