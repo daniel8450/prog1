@@ -10,6 +10,7 @@ loop x = do
       euler x
       if x < 100
       then loop (x + 1)
-      print x
+ 
       
-
+main = do
+print x
