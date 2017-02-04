@@ -9,12 +9,12 @@ add x = x+x
 pow :: Float -> Float
 pow x = x^x
 
-all :: Float -> Float
-all = pow . add . oneOver
+fall :: Float -> Float
+fall = pow . add . oneOver
 
 main = do
 
-       let y = (all 2)
+       let y = (fall 2)
        print y
 
 
