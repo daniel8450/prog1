@@ -1,9 +1,12 @@
-OBJS = euler
+src = $(wildcard *.hs)
+bin = $(src:%.hs=%)
+hi  = $(src:%.hs=%.hi)
+obj = $(src:%.hs=%.o)
 
-all $(OBJS)
+all : $(bin)
 
-euler: euler.hs
-        ghc euler.hs
+% : %.hs
+	ghc $@
 
 clean:
-        $(RM) *.hi *.o $(OBJS)
+	rm -f $(bin) $(hi) $(obj)
