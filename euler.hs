@@ -13,4 +13,5 @@ loop x = do
  
       
 main = do
-print x
+      let y = (euler 2)
+      print y
