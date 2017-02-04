@@ -1,4 +1,3 @@
-euler :: Float
 
 oneOver :: Float -> Float
 oneOver x = 1/x
