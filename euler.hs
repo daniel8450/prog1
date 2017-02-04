@@ -1,22 +1,21 @@
-timestwo :: Int -> Int
-timestwo x = x*2
+euler :: Float
 
-plusone :: Int -> Int
-plusone x = x+1
+oneOver :: Float -> Float
+oneOver x = 1/x
 
-squared :: Int -> Int
-squared x = x*x
+add :: Float -> Float
+add x = x+x
 
-fun :: Int -> Int
-fun = squared . timestwo . plusone 
+pow :: Float -> Float
+pow x = x^x
+
+all :: Float -> Float
+all = pow . add . oneOver
 
 main = do
 
-       let y = (squared (timestwo (plusone 3)))
+       let y = (all 2)
        print y
 
-       let y = squared $ timestwo $ plusone 3
-       print y -- Function application
 
-       let y = (fun 3)
-       print y -- Function composition
+
