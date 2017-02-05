@@ -27,8 +27,6 @@
   pie :: Float -> Float -> Float
   pie x n = x * (4 / (n * (n+1) * (n+2)))
   
-  npie :: Float -> Float -> Float
-  npie x n = (-x) * (4 / (n * (n+1) * (n+2)))
 
   c :: Int
   c = 1
@@ -36,15 +34,16 @@
   d :: Int
   d = 0
   
-check :: Int -> Float
+check :: Int -> Int -> Float
 check c
     | c == 0 && d <= 100 = (pie 1 d) ++ (d + 1) ++ (c = 1)
     | otherwise          = (pie (-1) d) ++ (d + 1) ++ (c = 0)
     
     
-   
 main = do
   print check
+  
+
   
   
   
