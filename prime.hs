@@ -16,4 +16,4 @@ putStrLn "Enter nth term to find:"
 inputjar <- getLine
 let n = read inputjar :: Int
 
-print (prime !! n)
+print n++"th prime number is"++(prime !! n)
