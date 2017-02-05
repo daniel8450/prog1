@@ -3,11 +3,11 @@ toList n
        | n < 1 = []
        | otherwise = toList (n `div` 10) ++ [n `mod` 10]
 
-m :: [Int]
-m = reverse (toList n)
+m :: [Int] -> [Int]
+m n = reverse (toList n)
 
-r :: Int -> Int
-r = concat m
+r :: [Int] -> Int
+r m = concat m
 
 main = do
 putStrLn "Enter int to reverse:"
