@@ -12,25 +12,20 @@
 --pie :: Float
 --pie = (3 + 4) * n !! 100
 -------------------------------------------------------------
---three :: Float
---three = 3
+three :: Float
+three = 3
 
---add :: Float -> Float
---add x = x + three
+add :: Float -> Float
+add x = x + three
 
---pie :: Float
---pie = (add 4 / (n*(n+1)*(n+2)) | n <- [0..100], (n+2))
+pie :: Float
+pie = (add 4) / (n*(n+1)*(n+2))
 
 
+Prelude> iterate (+2) 0
+[pie]
 
---main = do
-  ---let x = pie
-  --print x
-  
-pie :: Float -> Float
-pie k = ((-1)**k) / ((2*k+2)*(2*k+3)*(2*k+4)) 
 
-pies :: Float -> [Float]
-pies k = ((-1)**k) / ((2*k+2)*(2*k+3)*(2*k+4)) ++ [pie (k)]
-
-main = do print (pies 100)
+main = do
+  let x = pie
+  print x
