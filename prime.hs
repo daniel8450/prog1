@@ -8,9 +8,8 @@
 --prime n | (isPrime
 
 prime :: [Int]
-prime = sieve [2..]
-  where
-    sieve (pri:xs) = pri : sieve [x | x <- xs, x `mod` pri > 0]
+prime = isPrime [2..]
+  where isPrime (p:xs) = p : isPrime [x | x <- xs, x `mod` p /= 0]
  
 main = do
 putStrLn "Enter nth term to find:"
