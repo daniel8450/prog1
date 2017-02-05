@@ -27,9 +27,10 @@
   ---let x = pie
   --print x
   
-  
-main = do
-       print ( map (+3)   [1, 2, 3] )
-       print ( map (*3)   [1, 2, 3] )
-       print ( map ((-)3) [1, 2, 3] )
-       print ( map (/0)   [2, 4, 6] )
+pie :: Float -> Float
+pie k = ((-1)**k) / ((2*k+2)*(2*k+3)*(2*k+4)) 
+
+pie :: Float -> [Float]
+pie k = ((-1)**k) / ((2*k+2)*(2*k+3)*(2*k+4)) ++ [pie (k)]
+
+main = do print (pie 100)
