@@ -23,3 +23,9 @@ echo "///sorted///"
 echo
 echo "///reverse///"
 ./reverse
+
+
+echo
+echo "///dot///"
+./dot
+
