@@ -35,9 +35,9 @@
   
   pie :: Float
   pie = if(c == 1)
-          then pie m 
+          then (pie m) 
           c = 0
-          else pie nm 
+          else (pie nm) 
           c = 1
   
   
