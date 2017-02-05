@@ -3,7 +3,7 @@ toList n
        | n < 1 = []
        | otherwise = toList (n `div` 10) ++ [n `mod` 10]
 
-m :: [Int]
+m :: [Int] -> [Int]
 m n = reverse n
 
 --r :: [Int] -> Int
