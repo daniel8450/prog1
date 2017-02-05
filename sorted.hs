@@ -1,5 +1,11 @@
 --sorted :: [Int] -> Bool
 
+quicksort :: [Int] -> [Int]
+quicksort [] = []
+quicksort (x:xs) = quicksort(filter (<=x) xs) 
+                        ++ [x] ++ 
+                   quicksort(filter (>x)  xs) 
+
 main = do
-       print ( [1, 2, 3, 4, 5]  )
-       print ( [2, 3] ++ [3, 4] )
+       let x = [2, 7, 3, 11, 5, 13]
+       print (quicksort x)
