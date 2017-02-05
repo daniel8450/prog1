@@ -9,8 +9,8 @@ n :: [Float]
 n = [((-1)**k) / ((2*k+2)*(2*k+3)*(2*k+4)) | k <- [0,2..200]]
 
 
-pie :: Float
-pie = (3 + 4) * n !! n
+pie :: [Float]
+pie = (3 + 4) * n 
 -------------------------------------------------------------
 ---three :: Float
 --three = 3
@@ -25,6 +25,6 @@ pie = (3 + 4) * n !! n
 --getPie = pie (n+2)
 
 main = do
-  let x = pie
+  let x = pie !! 100
   print pie
-  print n
+  
