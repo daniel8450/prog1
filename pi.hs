@@ -34,7 +34,7 @@
   d :: Float
   d = 0
   
-check :: (Float -> Float) -> Float
+check :: Float -> Float -> Float
 check c
     | (c == 0 && d <= 100) = (pie 1 d) ++ (d + 1) ++ (c = 1)
     | otherwise          = (pie (-1) d) ++ (d + 1) ++ (c = 0)
