@@ -9,4 +9,4 @@ all : $(bin)
 	ghc $@
 
 clean:
-	rm -f $(bin) $(hi) $(obj) $(run:%.sh=%)
+	rm -f $(bin) $(hi) $(obj) $(run:%)
