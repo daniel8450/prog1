@@ -9,5 +9,5 @@
 
 main = do
        let x = [2..n]
-       print (filer ((mod n m) /= 0) x)
+       print (filter ((mod n m) /= 0) x)
      
