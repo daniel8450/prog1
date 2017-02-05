@@ -39,7 +39,6 @@
           else (nm (c+1)) 
    
 main = do
-  let x = pie
   print pie
   
   
