@@ -22,7 +22,7 @@ pie :: [Float]
 pie = [(add 4) / [(n*(n+1)*(n+2)) | n <- [0,2..200]]
 
 getPie :: Float
-getPie = (add 4) / (pie !! 100)
+getPie = add 4 / pie
 
 main = do
   let x = getPie
