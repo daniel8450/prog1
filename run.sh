@@ -13,3 +13,10 @@ echo "///pi///"
 echo
 echo "///prime///"
 ./prime
+
+
+
+echo
+echo "///sorted///"
+./sorted
+
