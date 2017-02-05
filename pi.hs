@@ -28,13 +28,13 @@
   pie x n = x * (4 / (n * (n+1) * (n+2)))
   
 
-  c :: Int
+  c :: Float
   c = 1
   
-  d :: Int
+  d :: Float
   d = 0
   
-check :: Int -> Int -> Float
+check :: (Float -> Float) -> Float
 check c
     | (c == 0 && d <= 100) = (pie 1 d) ++ (d + 1) ++ (c = 1)
     | otherwise          = (pie (-1) d) ++ (d + 1) ++ (c = 0)
