@@ -15,8 +15,11 @@ echo "///prime///"
 ./prime
 
 
-
 echo
 echo "///sorted///"
 ./sorted
 
+
+echo
+echo "///reverse///"
+./reverse
