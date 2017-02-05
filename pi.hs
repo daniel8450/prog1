@@ -24,19 +24,20 @@
 --pie :: Float
 --pie = (add 4)
 
+  m :: Float
+  m = x * (4 / (n * (n+1) * (n+2)))
+  
+  nm :: Float
+  nm = (-x) * (4 / (n * (n+1) * (n+2)))
 
   c :: Int
   c = 1
   
-  check :: Bool
-  if (c) == 1 
-  then pie = x * (4 / (n * (n+1) * (n+2)))
-  c == 0
-  else pie = (-x) * (4 / (n * (n+1) * (n+2)))
-  c == 1
-  
-  
 main = do
+  if(c) == 1
+  then pie m, c = 0
+  else pie nm, c = 1
+
   let x = pie
   print pie
   
