@@ -1,13 +1,13 @@
 #!/bin/bash
 
 echo
-echo "euler-> " ++ ./euler
+echo "euler-> $(euler)"
 
 
 echo
-echo "pi-> " ++ ./pi
+echo "pi-> "
 
 
 echo
-echo "prime-> " ++ ./prime
+echo "prime-> $(./prime)"
 
