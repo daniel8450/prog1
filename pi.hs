@@ -22,7 +22,7 @@
 --pie = [add 4 / (n*(n+1)*(n+2)) | n + 2 <- [0..100]]
 
 pie :: Float -> Float
-pie = let k = k <- [0..100]
+pie = let k = k+1 | k <- [0..100]
       in (-1**k / (2*k+2)*(2*k+3)*(2*k+4))
 
 main = do
