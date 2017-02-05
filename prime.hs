@@ -12,4 +12,10 @@ prime = sieve [2..]
   where
     sieve (p:xs) = p : sieve [x |x <- xs, x `mod` p > 0]
  
-main = print (Main.prime)
+main = do
+putStrLn "input:"
+n <- getLine
+read :: read a => String -> a
+putstrLn( read n :: Int)
+
+print (Main.prime !! n)
