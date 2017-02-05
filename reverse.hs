@@ -9,7 +9,6 @@ m x = Prelude.reverse x
 c :: [Int] -> [Int]
 c x = m x
 
-
 reverse :: [Int] -> Int
 reverse = foldl addDigit 0
    where addDigit num d = 10*num + d
