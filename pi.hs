@@ -19,9 +19,12 @@ add :: Float -> Float
 add x = x + three
 
 pie :: [Float]
-pie = [(add 4) / (n*(n+1)*(n+2)) | n <- [0,2..200]]
+pie = [(add 4) / [(n*(n+1)*(n+2)) | n <- [0,2..200]]
+
+getPi :: Float
+getPi = (add 4) / pie !! 100
 
 main = do
-  let x = pie
-  print pie
+  let x = getPi
+  print getPi
   
