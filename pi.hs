@@ -33,11 +33,13 @@
   c :: Int
   c = 1
   
-main =
-  if(c) == 1
-  then pie m, c = 0
-  else pie nm, c = 1
-
+  pie :: Float
+  pie =   if(c == 1)
+          then pie m, c = 0
+          else pie nm, c = 1
+  
+  
+main = do
   let x = pie
   print pie
   
