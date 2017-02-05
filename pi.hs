@@ -27,3 +27,4 @@ pie = (3 + 4) * n !! 100
 main = do
   let x = pie
   print pie
+  print n
