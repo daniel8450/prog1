@@ -9,7 +9,7 @@
 
 prime :: [Int]
 prime = isPrime [2..]
-  where isPrime (p:xs) = p : isPrime [x | x <- xs, xs `mod` p /= 0]
+  where isPrime (p:xs) = p : isPrime [x | x <- xs, x `mod` p /= 0]
  
 main = do
 putStrLn "Enter nth term to find:"
