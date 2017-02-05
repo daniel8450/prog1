@@ -8,7 +8,7 @@
 --prime n | (isPrime
 
 prime :: [Int]
-prime = sieve [2..]
+prime = sieve [2..15]
   where
     sieve (p:xs) = p : sieve [x |x <- xs, x `mod` p > 0]
  
