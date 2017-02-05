@@ -9,4 +9,4 @@ all : $(bin)
 	ghc $@
 
 clean:
-	rm -f $(bin) $(hi) $(obj)
+	rm -f $(src:%.hs=%.o) $(src:%.hs=%.hi) $(src:%.hs=%) 
