@@ -16,6 +16,6 @@ main = do
 putStrLn "input:"
 n <- getLine
 read :: read a => String -> a
-putstrLn( read n :: Int)
+putStrLn( read n :: Int)
 
 print (Main.prime !! n)
