@@ -6,11 +6,11 @@ toList x
 m :: [Int] -> [Int]
 m x = reverse x
 
---r :: [Int] -> Int
---r m = concat m
+r :: [Int] -> Int
+r x = concat x
 
 main = do
 putStrLn "Enter int to reverse:"
 inputjar <- getLine
 let n = read inputjar :: Int
-print (m (toList n))
+print  (r (m (toList n)))
