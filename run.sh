@@ -1,13 +1,15 @@
 #!/bin/bash
 
 echo
-echo "euler-> $(euler)"
+echo "///euler///"
+./euler
 
 
 echo
-echo "pi-> "
+echo "///pi///"
+./pi
 
 
 echo
-echo "prime-> $(./prime)"
-
+echo "///prime///"
+./prime
