@@ -5,11 +5,11 @@ toList n
 
 reverse :: [Int] -> [Int]
 reverse [] = []
-reverse (x:xs) = reverse((last x) xs) ++ [x]
+reverse (x:xs) = reverse(last (toList n) xs) ++ [x]
 
 
 main = do
 putStrLn "Enter int to reverse:"
 inputjar <- getLine
 let n = read inputjar :: Int
-print (reverse (toList n))
+print (reverse n)
