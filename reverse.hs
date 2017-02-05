@@ -14,4 +14,4 @@ main = do
 putStrLn "Enter int to reverse:"
 inputjar <- getLine
 let n = read inputjar :: Int
-print  (reverse)
+print (Main.reverse)
