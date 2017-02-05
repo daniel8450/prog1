@@ -12,17 +12,24 @@
 --pie :: Float
 --pie = (3 + 4) * n !! 100
 -------------------------------------------------------------
-three :: Float
-three = 3
+--three :: Float
+--three = 3
 
-add :: Float -> Float
-add x = x + three
+--add :: Float -> Float
+--add x = x + three
 
-pie :: Float
-pie = (add 4 / (n*(n+1)*(n+2)) | n <- [0..100], (n+2))
+--pie :: Float
+--pie = (add 4 / (n*(n+1)*(n+2)) | n <- [0..100], (n+2))
 
 
 
+--main = do
+  ---let x = pie
+  --print x
+  
+  
 main = do
-  let x = pie
-  print x
+       print ( map (+3)   [1, 2, 3] )
+       print ( map (*3)   [1, 2, 3] )
+       print ( map ((-)3) [1, 2, 3] )
+       print ( map (/0)   [2, 4, 6] )
