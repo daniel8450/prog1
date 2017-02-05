@@ -22,7 +22,7 @@ pie :: Float
 pie = (add 4) / (n*(n+1)*(n+2))
 
 
-Prelude> iterate (+2) 0
+iterate (+2) 0
 [pie]
 
 
