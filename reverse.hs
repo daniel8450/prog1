@@ -4,7 +4,7 @@ toList n
        | otherwise = toList (n `div` 10) ++ [n `mod` 10]
 
 m :: [Int]
-m = reverse (toList n)
+m n = reverse n
 
 --r :: [Int] -> Int
 --r m = concat m
@@ -13,4 +13,4 @@ main = do
 putStrLn "Enter int to reverse:"
 inputjar <- getLine
 let n = read inputjar :: Int
-print (m)
+print (m (toList n))
