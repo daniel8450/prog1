@@ -18,13 +18,12 @@ three = 3
 add :: Float -> Float
 add x = x + three
 
-pie :: Float
-pie = (add 4) / (n*(n+1)*(n+2))
+pie :: Float -> Float
+pie n = (add 4) / (n*(n+1)*(n+2))
 
+getPie :: Float
+getPie = pie (n+2)
 
-
-
-
-main = iterate (+2) 0
-[pie]
-print pie
+main = do
+  let x = pie
+  print pie
