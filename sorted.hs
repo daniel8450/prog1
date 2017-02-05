@@ -11,4 +11,4 @@ sorted n = if (n == quicksort n) then True
 
 main = do
        let x = [2, 7, 3, 11, 5, 13]
-       print (quicksort x)
+       print (sorted x)
