@@ -1,10 +1,10 @@
 toList :: Int -> [Int]
-toList n
-       | n < 1 = []
-       | otherwise = toList (n `div` 10) ++ [n `mod` 10]
+toList x
+       | x < 1 = []
+       | otherwise = toList (x `div` 10) ++ [x `mod` 10]
 
 m :: [Int] -> [Int]
-m n = reverse n
+m x = reverse x
 
 --r :: [Int] -> Int
 --r m = concat m
