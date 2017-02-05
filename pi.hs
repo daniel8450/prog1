@@ -22,10 +22,9 @@ pie :: Float
 pie = (add 4) / (n*(n+1)*(n+2))
 
 
-iterate (+2) 0
+
+
+
+main = iterate (+2) 0
 [pie]
-
-
-main = do
-  let x = pie
-  print x
+print pie
