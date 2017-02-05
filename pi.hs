@@ -18,7 +18,7 @@ three = 3
 add :: Float -> Float
 add x = x + three
 
-pie :: Float -> (Float, Float)
+pie :: (Num n) => n -> (n,n)
 pie n = (add 4 / (n*(n+1)*(n+2)), (n+2))
 
 
