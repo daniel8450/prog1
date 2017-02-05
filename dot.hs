@@ -9,4 +9,5 @@ let n = read inputjar :: [Float]
 putStrLn "Enter list2:"
 inputjar <- getLine
 let m = read inputjar :: [Float]
+putStr "dot product = "
 print (dot n m)
