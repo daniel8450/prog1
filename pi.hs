@@ -24,22 +24,27 @@
 --pie :: Float
 --pie = (add 4)
 
-  m :: Float
-  m = x * (4 / (n * (n+1) * (n+2)))
+  pie :: Float -> Float -> Float
+  pie x n = x * (4 / (n * (n+1) * (n+2)))
   
-  nm :: Float
-  nm = (-x) * (4 / (n * (n+1) * (n+2)))
+  npie :: Float -> Float -> Float
+  npie x n = (-x) * (4 / (n * (n+1) * (n+2)))
 
   c :: Int
   c = 1
   
-  pie :: Float
-  pie = if(c == 1)
-          then (m (c-1)) 
-          else (nm (c+1)) 
+  d :: Int
+  d = 0
+  
+check :: Int -> Float
+check c
+    | c == 0 && d <= 100 = (pie 1 d) ++ (d + 1) ++ (c = 1)
+    | otherwise          = (pie (-1) d) ++ (d + 1) ++ (c = 0)
+    
+    
    
 main = do
-  print pie
+  print check
   
   
   
