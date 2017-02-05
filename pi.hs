@@ -1,13 +1,13 @@
 n :: [Float]
 n = [(-1)**k / (2*k+2)*(2*k+3)*(2*k+4) | k <- [0,2..200]]
-n !! 100
 
 
-pie :: Float
-pie = 3 + (4 * n)
+
+--pie :: Float
+--pie = 3 + (4 * n)
 
 main = do
-let y = pie
+let y = n
 print y
 
   
