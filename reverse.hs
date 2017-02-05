@@ -6,6 +6,10 @@ toList x
 m :: [Int] -> [Int]
 m x = Prelude.reverse x
 
+c :: [Int] -> [Int]
+c x = m x
+
+
 reverse :: [Int] -> Int
 reverse = foldl addDigit 0
    where addDigit num d = 10*num + d
@@ -14,4 +18,4 @@ main = do
 putStrLn "Enter int to reverse:"
 inputjar <- getLine
 let n = read inputjar :: Int
-print (Main.reverse [1,2,3])
+print (reverse (c n))
