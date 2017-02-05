@@ -14,8 +14,7 @@ prime = sieve [2..]
  
 main = do
 putStrLn "input:"
-n <- getLine
-read :: read a => String -> a
-putStrLn( read n :: Int)
+inputjar <- getLine
+let n = read inputjar :: Int
 
 print (Main.prime !! n)
