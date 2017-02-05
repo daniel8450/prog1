@@ -4,7 +4,7 @@ toList x
        | otherwise = toList (x `div` 10) ++ [x `mod` 10]
 
 m :: [Int] -> [Int]
-m x = reverse x
+m x = Prelude.reverse x
 
 reverse :: [Int] -> Int
 reverse = foldl addDigit 0
