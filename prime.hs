@@ -8,6 +8,8 @@
 --prime n | (isPrime
 
 main = do
+       n <- getLine
+       let m = n -1
        let x = [2..n]
        print (filter ((mod n m) /= 0) x)
      
