@@ -7,9 +7,7 @@
 --prime : Int -> [Int]
 --prime n | (isPrime
 
-main = do
-       n <- getLine
-       let m = n -1
-       let x = [2..n]
-       print (filter ((mod n m) /= 0) x)
-     
+prime :: [Int]
+prime = sieve [2..]
+  where
+    sieve (p:xs) = p sieve [x|x <- xs, x `mod` p > 0]
