@@ -5,8 +5,8 @@ dot (x:xs) (y:ys) = x * y + dot xs ys
 main = do
 putStrLn "Enter list1:"
 inputjar <- getLine
-let n = read inputjar :: [Int]
+let n = read inputjar :: [Float]
 putStrLn "Enter list2:"
 inputjar <- getLine
-let m = read inputjar :: [Int]
+let m = read inputjar :: [Float]
 print (dot n m)
