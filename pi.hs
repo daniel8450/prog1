@@ -33,7 +33,7 @@
   c :: Int
   c = 1
   
-main = do
+main =
   if(c) == 1
   then pie m, c = 0
   else pie nm, c = 1
